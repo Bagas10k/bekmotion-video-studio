@@ -8,11 +8,11 @@ import { OpeningGallery } from './compositions/OpeningGallery';
 export const Root: React.FC = () => {
   return (
     <>
-      {/* 48 Opening Motion Gallery (Digital Scan, Glitch, Speed Tunnel, Flash Reveal) */}
+      {/* 8 Opening Motion Master Gallery (Full 8 Techniques: Digital Scan, Shockwave, Typo Explosion, Glitch, Punch Cut, Speed Tunnel, Screen Crack, Flash Reveal) */}
       <Composition
         id="OpeningMotionGallery"
         component={OpeningGallery}
-        durationInFrames={240}
+        durationInFrames={480}
         fps={60}
         width={1920}
         height={1080}
