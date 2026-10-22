@@ -1,0 +1,41 @@
+{
+  "name": "bekmotion-video-studio",
+  "version": "1.0.0",
+  "description": "Enterprise-grade cinematic motion graphics and video animation studio combining Remotion, BekVector procedural graphics, auto-voiceover sync, and anti-PPT camera choreography.",
+  "main": "src/index.ts",
+  "scripts": {
+    "studio": "remotion studio src/index.ts --port 3370",
+    "render:16x9": "remotion render BekMotion16x9 output/bekmotion_16x9.mp4 --concurrency=4",
+    "render:9x16": "remotion render BekMotion9x16 output/bekmotion_9x16.mp4 --concurrency=4",
+    "render:vector": "remotion render BekVectorShowcase output/bekvector_showcase.mp4 --concurrency=4",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "remotion",
+    "motion-graphics",
+    "cinematic-video",
+    "bekvector",
+    "procedural-graphics",
+    "anti-ppt",
+    "voiceover-sync",
+    "video-automation"
+  ],
+  "author": "Bagas Cihuy (Bagas Saputra) <bagas.office01@gmail.com> (https://github.com/Bagas10k)",
+  "license": "MIT",
+  "dependencies": {
+    "@remotion/cli": "^4.0.528",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.528"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
