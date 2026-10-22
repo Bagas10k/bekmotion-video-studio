@@ -3,10 +3,21 @@ import { Composition } from 'remotion';
 import { CinematicExplainer } from './compositions/CinematicExplainer';
 import { ReelsStory } from './compositions/ReelsStory';
 import { VectorLivingStage } from './compositions/VectorLivingStage';
+import { OpeningGallery } from './compositions/OpeningGallery';
 
 export const Root: React.FC = () => {
   return (
     <>
+      {/* 48 Opening Motion Gallery (Digital Scan, Glitch, Speed Tunnel, Flash Reveal) */}
+      <Composition
+        id="OpeningMotionGallery"
+        component={OpeningGallery}
+        durationInFrames={240}
+        fps={60}
+        width={1920}
+        height={1080}
+      />
+
       {/* 16:9 Landscape Cinematic Explainer (1920x1080 @ 60 FPS, 3 seconds / 180 frames) */}
       <Composition
         id="BekMotion16x9"
